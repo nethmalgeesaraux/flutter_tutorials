@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "new app",
       home: Scaffold(
+        backgroundColor: Colors.black,
         appBar: AppBar(
           title: const Text("Flutter App"),
           backgroundColor: Colors.amberAccent,
@@ -22,16 +23,15 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
-        body: Center(
-          child: Container(
-            width: 250,
-            height: 200,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(1000),
-              color: Colors.yellowAccent,
+        body: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(top: 100, left: 100, right: 100),
+              child: Image.asset("assets/1.jpg", height: 200),
             ),
-            child: Center(child: const Text("Nethmal")),
-          ),
+
+            const SizedBox(height: 200),
+          ],
         ),
       ),
     );
