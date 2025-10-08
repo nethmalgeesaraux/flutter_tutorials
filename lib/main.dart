@@ -13,17 +13,27 @@ class MyApp extends StatelessWidget {
       title: "new app",
       home: Scaffold(
         appBar: AppBar(
-          title:const Text("Flutter App"),
+          title: const Text("Flutter App"),
           backgroundColor: Colors.amberAccent,
           actions: [
             IconButton(
               icon: const Icon(Icons.notifications_active),
-              onPressed: () {
-                },
-              ),
-            ],
+              onPressed: () {},
+            ),
+          ],
+        ),
+        body: Center(
+          child: Container(
+            width: 250,
+            height: 200,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(1000),
+              color: Colors.yellowAccent,
+            ),
+            child: Center(child: const Text("Nethmal")),
           ),
         ),
+      ),
     );
   }
 }
