@@ -123,6 +123,59 @@ class MyApp extends StatelessWidget {
                     ],
                   ),
                 ),
+                //end 2 btn 3 sceen
+                Center(
+                  child: Image.asset("assets/3.jpg", height: 300, scale: 2),
+                ),
+                Text(
+                  "Galaxy is a massive system of stars, stellar remnants, interstellar gas, dust, and dark matter, all bound together by gravity. Galaxies come in various shapes and sizes, ranging from small dwarf galaxies with a few billion stars to giant elliptical galaxies containing trillions of stars. Our own galaxy, the Milky Way, is a barred spiral galaxy that contains our solar system. Galaxies are the fundamental building blocks of the universe and play a crucial role in its structure and evolution. They can interact and merge with one another, leading to the formation of new stars and altering their shapes. Studying galaxies helps astronomers understand the history of the universe, the distribution of matter, and the processes that govern cosmic evolution.",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.white, fontSize: 16),
+                ),
+                SizedBox(height: 20),
+                GestureDetector(
+                  onTap: () {},
+                  child: Center(
+                    child: Container(
+                      padding: EdgeInsets.all(10),
+                      margin: EdgeInsets.symmetric(vertical: 20),
+                      decoration: BoxDecoration(
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(100),
+                      ),
+                      child: Text(
+                        "Space More",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 20),
+                Container(
+                  height: 2,
+                  width: 500,
+                  decoration: BoxDecoration(color: Colors.white),
+                ),
+                SizedBox(height: 20),
+                Text(
+                  "BLACK HOLD",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height: 20),
+                Center(
+                  child: Text(
+                    "Developed by Flutter App Team 2024 @all right reserved",
+                    style: TextStyle(color: Colors.white, fontSize: 16),
+                  ),
+                ),
               ],
             ),
           ),
